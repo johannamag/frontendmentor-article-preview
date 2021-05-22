@@ -92,6 +92,7 @@ body {
 }
 
 .right {
+  position: relative;
   width: 25px;
   height: 25px;
   display: flex;
@@ -100,6 +101,31 @@ body {
   background-color: var(--gray);
   border-radius: 50%;
   cursor: pointer;
+}
+
+.icons {
+  position: absolute;
+  left: -120px;
+  top: 0;
+  padding: 5px 15px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: var(--dark-blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+.icons.show {
+  visibility: visible;
+}
+
+.facebook,
+.twitter,
+.pinterest {
+  width: 15px;
 }
 
 .share:hover {
