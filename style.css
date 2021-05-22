@@ -147,3 +147,20 @@ a {
 a:hover {
   color: var(--blue);
 }
+
+@media screen and (max-width: 555px) {
+  .card {
+    flex-direction: column;
+  }
+  .card-img {
+    width: 100%;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .icons {
+    left: -70px;
+    top: 35px;
+  }
+}
