@@ -19,3 +19,105 @@
 body {
   background-color: var(--gray);
 }
+
+.main {
+  min-height: 100vh;
+  width: 100vw;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  max-width: 900px;
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card-img {
+  background-image: url("./images/drawers.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 70%;
+}
+
+.text {
+  padding: 30px;
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--darkest-blue);
+  margin-bottom: 20px;
+}
+
+.desc {
+  color: var(--dark-blue);
+  margin-bottom: 20px;
+  line-height: 1.6rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.name {
+  color: var(--darkest-blue);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.date {
+  color: var(--blue);
+}
+
+.right {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gray);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.share:hover {
+  transform: scale(1.2);
+}
+
+.attribution {
+  text-align: center;
+  color: var(--dark-blue);
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--darkest-blue);
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--blue);
+}
